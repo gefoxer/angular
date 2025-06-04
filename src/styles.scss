@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fafafa;
+  overflow-x: clip;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 1120px) {
+  .container {
+    max-width: 800px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    max-width: 600px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    max-width: 373px;
+  }
+}
+@media (max-width: 373px) {
+  .container {
+    max-width: 344px;
+  }
+}
+.abel {
+  font-family: "Abel", sans-serif;
+}
+.abeezee {
+  font-family: "ABeeZee", sans-serif;
+}
+
