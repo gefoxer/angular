@@ -293,11 +293,18 @@ button {
 
 
 @media (max-width: 1370px){
+  
   .apple_card {
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
+    p{
+      font-style: normal;
+    }
+    h4{
+      font-style: normal;
+    }
   }
   .apple_card_mini {
     min-width: 100%;
@@ -336,7 +343,6 @@ button {
 @media (max-width: 1125px) {
   * {
     font-family: "Abel", sans-serif;
-    font-style: normal;
   }
   .apple_card_mini_mini {
     display: flex;
@@ -490,6 +496,15 @@ button {
   gap: 16px;
 }
 
+@media (max-width: 1125px) {
+  .card_category{
+    justify-content: center;
+    p{
+      font-style: normal;
+    }
+  }
+}
+
 // СЕКЦИЯ КОМПОНЕНТ ГАДЖЕТОВ
 
 .card_sale {
@@ -523,9 +538,10 @@ button {
 
 @media (max-width: 1125px) {
   .card_category_sale{
-    padding-left: 16px;
-    
-    
+    justify-content: center;
+    p{
+      font-style: normal;
+    }
   }
 }
 // СЕКЦИЯ КОМПОНЕНТ ГАДЖЕТОВ ПО СКИДКЕ
@@ -610,6 +626,7 @@ button {
     border: 1px solid white;
     border-radius: 6px;
     margin-top: 40px;
+    
   }
 
   button:hover{
@@ -622,7 +639,13 @@ button {
 }
 
 @media (max-width: 1125px){
+  
   .summer_sale{
+    button{
+    p{
+      font-style: normal;
+    }
+  }
     img:nth-child(2){
       left: -200px;
       top: 400px;
