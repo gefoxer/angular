@@ -103,6 +103,8 @@ button {
 
 }
 
+// СЕКЦИЯ С АЙФНОМ
+
 
 
 .apple_card {
@@ -457,6 +459,74 @@ button {
   }
 }
 
+// СЕКЦИАЯ С КАРТОЧКАМИ ЭПЛ ТЕХНИК
+
+.card {
+  max-width: 1120px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  display: flex;
+  margin: 0 auto;
+}
+
+
+.card_category {
+  display: flex;
+  padding-top: 56px;
+  padding-bottom: 32px;
+  gap: 32px;
+  p{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+  }
+}
+
+.card_flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+// СЕКЦИЯ КОМПОНЕНТ ГАДЖЕТОВ
+
+.card_sale {
+  max-width: 1120px;
+  padding-top: 80px;
+  padding-bottom: 56px;
+  display: flex;
+  margin: 0 auto;
+}
+
+
+.card_category_sale {
+  display: flex;
+  padding-top: 56px;
+  padding-bottom: 32px;
+  p{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+  }
+}
+
+.card_flex_sale{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+// СЕКЦИЯ КОМПОНЕНТ ГАДЖЕТОВ ПО СКИДКЕ
+
+
+
+
+
+
+
 .summer_sale {
   background: linear-gradient(147deg, rgba(46,46,46,1) 0%, rgba(0,0,0,1) 100%);
   width: 100%;
@@ -578,4 +648,5 @@ button {
   }
 }
 
+// ЛЕТНЯЯ СКИДКА
 

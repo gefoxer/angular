@@ -1,0 +1,114 @@
+.card {
+    background: rgba(246, 246, 246, 1);
+    width: 268px;
+    max-height: 456px;
+    border-radius: 9px;
+    position: relative;
+    .rel{
+        position: absolute;
+        top: 25.33px;
+        right: 17.33px;
+        cursor: pointer;
+    }
+}
+
+.card_pos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_w {
+    max-width: 236px;
+    text-align: center;
+    h5{
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 1);
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
+
+    p{
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center; 
+    }
+    img {
+        margin-top: 72px;
+    }
+
+    button{
+        width: 168px;
+        height: 48px;
+        background: black;
+        border-radius: 8px;
+        border: 0;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        transition: 0.5s;
+        cursor: pointer;
+        p{
+            color: rgba(255, 255, 255, 1);
+            font-style: italic;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+
+    button:hover {
+        background: none ;
+        border: 1px solid;
+        transform: scale(1.02);
+        p{
+            color: black;
+        }
+    }
+    
+}
+
+@media (max-width: 1125px) {
+
+    *{
+        font-family: "Abel", sans-serif;
+    }
+
+    .card {
+        max-height: 352px;
+        max-width: 163.5px;
+    }
+
+    .card_w{
+        max-width: 139px;
+        img {
+            max-height: 104px;
+            max-width: 104px;
+            margin-top: 64px;
+        }
+
+        h5{
+            font-size: 16px;
+            font-style: normal;
+            margin-top: 8px;
+            height: 48px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap ;  
+        }
+
+        p{
+            font-size: 24px;
+
+        }
+
+        button{
+            height: 48px;
+            width: 139.5px;
+            margin-top: 16px;
+        }
+    }
+
+
+}
+
