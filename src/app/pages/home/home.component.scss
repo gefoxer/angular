@@ -3,8 +3,10 @@
   font-style: italic;
 }
 
-
-
+button {
+  transition: 0.3s;
+  cursor: pointer;
+}
 
 .first {
   background: #211C24;
@@ -47,6 +49,11 @@
     border: 1px solid white;
     margin-top: 24px;
   }
+
+  button:hover {
+  background: rgba(0, 0, 0, 0.26);
+}
+
 
   button p {
     padding-top: 0;
@@ -187,8 +194,17 @@
     border-radius: 6px;
     border: 1px solid black;
   }
+
+  button:hover {
+    background: rgba(0, 0, 0, 1);
+    p{
+      color: white;
+    }
+  }
+
   button p {
     color: black;
+    transition: 0.3s;
   }
 }
 
@@ -440,4 +456,126 @@
     }
   }
 }
+
+.summer_sale {
+  background: linear-gradient(147deg, rgba(46,46,46,1) 0%, rgba(0,0,0,1) 100%);
+  width: 100%;
+  min-height: 448px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  overflow-y: clip;
+
+ 
+
+  img:nth-child(2){
+    position: absolute;
+    z-index: -1;
+    left: 1px;
+    top: 172px;
+  }
+
+  img:nth-child(3){
+    position: absolute;
+    z-index: -1;
+    left: 39px;
+    top: 0;
+  }
+   img:nth-child(4){
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+  }
+   img:nth-child(5){
+    position: absolute;
+    z-index: -1;
+    right: 1px;
+    top: 247px;
+  }
+
+   img:nth-child(6){
+    position: absolute;
+    z-index: -2;
+    left: 223px;
+    top: 0;
+  }
+
+  
+  
+}
+
+.summer_sale_txt {
+  h4 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 72px;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    font-style: normal;
+
+  }
+  p {
+    color: rgba(120, 120, 120, 1);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  button {
+    height: 56px;
+    width: 188px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 6px;
+    margin-top: 40px;
+  }
+
+  button:hover{
+    background: rgba(0, 0, 0, 0.459);
+  }
+  button p {
+    color: white;
+    font-style: italic;
+  }
+}
+
+@media (max-width: 1125px){
+  .summer_sale{
+    img:nth-child(2){
+      left: -200px;
+      top: 400px;
+      transform: rotate(-90deg);
+
+    }
+    img:nth-child(5){
+      right: -185px;
+      top: 344px;
+    }
+    img:nth-child(3){
+      left: -180px;
+      top: -70px;
+    }
+    img:nth-child(4){
+      right: -40px;
+      top: -90px;
+      transform: rotate(-30deg);
+    }
+     img:nth-child(6){
+      left: 20px;
+      top: -40px;
+      transform: rotate(7deg);
+    }
+    
+  }
+  .summer_sale_txt{
+    max-width: 343px;
+    h4{
+      font-size: 48px;
+    }
+  }
+}
+
 
