@@ -3,9 +3,12 @@ import { HeaderComponent } from '../../components/header/header.component';
 import { RouterLink } from '@angular/router';
 import { FooterComponent } from "../../components/footer/footer.component";
 import { CardComponent } from '../../components/card/card.component';
+import { FirstComponent } from "../../components/first/first.component";
+import { BannersComponent } from "../../components/banners/banners.component";
+
 @Component({
   selector: 'app-home',
-  imports: [HeaderComponent, FooterComponent, CardComponent],
+  imports: [HeaderComponent, FooterComponent, CardComponent, FirstComponent, BannersComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

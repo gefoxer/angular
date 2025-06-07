@@ -1,0 +1,367 @@
+* {
+  font-weight: 400;
+  font-style: italic;
+}
+
+button {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.apple_card {
+  width: 100%;
+  display: flex;
+}
+
+.apple_card_mini {
+  max-width: 50%;
+  width: 100%;
+}
+
+.ps5 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  padding-right: 48px;
+  background: white;
+  min-height: 328px;
+  position: relative;
+  overflow-x: clip;
+  overflow-y: clip;
+  img{
+    position: absolute;
+    left: -90px;
+    height: 343px;
+    top: 25px;
+  }
+}
+
+.ps5_txt {
+  max-width: 338px;
+   p{
+    color: rgba(144, 144, 144, 1);
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 16px;
+  }
+  h4 {
+    color: rgba(0, 0, 0, 1);
+    font-style: italic;
+    font-size: 49px;
+    font-weight: 400;
+  }
+
+}
+
+.macbook14 {
+  background: #EDEDED;
+  max-width: 50%;
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 56px;
+  position: relative;
+  overflow-x: clip;
+  img{
+    height: 502px;
+    position: absolute;
+    right: -500px;
+    top: 10px;
+  }
+
+
+}
+
+.macbook14_txt {
+  max-width: 360px;
+  h4 {
+    font-size: 64px;
+    font-weight: 400;
+    font-style: italic;
+  }
+  p {
+    color: #909090;
+    font-style: italic;
+    font-size: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  button {
+    height: 56px;
+    width: 188px;
+    border-radius: 6px;
+    border: 1px solid black;
+  }
+
+  button:hover {
+    background: rgba(0, 0, 0, 1);
+    p{
+      color: white;
+    }
+  }
+
+  button p {
+    color: black;
+    transition: 0.3s;
+  }
+}
+
+.apple_card_mini_mini {
+  display: flex;
+}
+
+.airpodsmax{
+  height: 272px;
+  max-width: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding-right: 48px;
+  position: relative;
+  overflow-x: clip;
+  overflow-y: clip;
+  img {
+    position: absolute;
+    left: -150px;
+    height: 272px;
+  }
+}
+
+.airpodsmax_txt {
+  max-width: 160px;
+  h4{
+    font-size: 29px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 40px;
+  }
+  p {
+    color: #909090;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 8px;
+
+  }
+}
+
+.applevision {
+  height: 272px;
+  max-width: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding-right: 48px;
+  background: #353535;
+  position: relative;
+  overflow-x: clip;
+  img {
+    position: absolute;
+    left: -185px;
+  }
+
+}
+
+.apllevision_txt {
+  max-width: 160px;
+  h4 {
+    color: white;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 29px;
+    line-height: 40px;
+  }
+
+  p {
+    color: #909090;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  
+}
+
+
+@media (max-width: 1370px){
+  
+  .apple_card {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+      font-style: normal;
+    }
+    h4{
+      font-style: normal;
+    }
+  }
+  .apple_card_mini {
+    min-width: 100%;
+    
+  }
+
+  .ps5 {
+    padding-right: 250px;
+    img{
+      left: 100px; 
+    };
+  }
+
+  .airpodsmax {
+    img {
+      left: 90px;
+    }
+  }
+
+  .applevision{
+    img{
+      left: 10px;
+    }
+  }
+
+
+  .macbook14 {
+    min-width: 100%;
+    img {
+      right: 0px; 
+      
+    }
+  }
+}
+
+@media (max-width: 1125px) {
+  * {
+    font-family: "Abel", sans-serif;
+  }
+  .apple_card_mini_mini {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ps5 {
+    padding-top: 40px;
+    min-width: 100%;
+    height: 100%;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    img{
+      position: static;
+      height: 100%;
+    }
+  }
+
+  .ps5_txt {
+    min-width: 343px;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    
+    h4 {
+      font-size: 34px; 
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .airpodsmax {
+    padding-top: 40px;
+    min-width: 100%;
+    height: 100%;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    img{
+      position: static;
+      height: 100%;
+    }
+  }
+
+  .airpodsmax_txt {
+    min-width: 343px;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    
+    h4 {
+      font-size: 34px; 
+    }
+    p {
+      font-size: 16px;
+    } 
+  }
+
+  .applevision {
+    padding-top: 40px;
+    min-width: 100%;
+    height: 100%;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    img{
+      position: static;
+      height: 100%;
+    }
+  }
+
+  .apllevision_txt {
+    min-width: 343px;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    
+    h4 {
+      font-size: 34px; 
+    }
+    p {
+      font-size: 16px;
+    } 
+  }
+
+  .macbook14 {
+    padding-top: 40px;
+    min-width: 100%;
+    height: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      position: static;
+      height: 100%;
+    }
+  }
+
+  .macbook14_txt {
+    min-width: 343px;
+    text-align: center;
+    align-content: center;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    
+    h4 {
+      font-size: 34px; 
+    }
+    p {
+      font-size: 16px;
+    } 
+
+    button {
+      width: 343px; 
+    }
+  }
+}
