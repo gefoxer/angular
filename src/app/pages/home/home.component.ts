@@ -10,6 +10,7 @@ import { SummersaleComponent } from "../../components/summersale/summersale.comp
 import { PopularproductComponent } from '../../components/popularproduct/popularproduct.component';
 
 
+
 @Component({
   selector: 'app-home',
   imports: [HeaderComponent, FooterComponent, CardComponent, FirstComponent, BannersComponent, CardsaleComponent, SummersaleComponent, PopularproductComponent],

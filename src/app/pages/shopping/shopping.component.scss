@@ -1,0 +1,55 @@
+
+section{
+    min-height: 880px;
+    background: white;
+}
+
+.form_page{
+    height: 80px;
+    margin-bottom: 24px;
+    label{
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(84, 84, 84, 1);
+        font-style: italic;
+        font-family: "ABeeZee", sans-serif;
+    }
+}
+
+.order{
+   
+}
+
+
+
+.border{
+    width: 408px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    border: 1px solid rgba(159, 159, 159, 1);
+    border-radius: 5px;
+    margin-top: 8px;
+    gap: 8px;
+    input{
+        width: 280px;
+        border: none;
+        outline: none;
+    }
+    button{
+        width: 76px;
+        height: 32px;
+        border: 1px solid rgba(0, 0, 0, 1);
+        border-radius: 6px;
+        background: none;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background: black;
+        color: white;
+    }
+
+}

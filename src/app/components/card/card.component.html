@@ -8,7 +8,7 @@
                 [alt]="isCardFavorite(card.id) ? 'В избранном' : 'Добавить в избранное'">
             <div class="card_w">
                 <img [src]="getProductImage(card)" [alt]="card.name">
-                <h5 class="abeezee">{{ card.name }}</h5>
+                <h5 class="abeezee">{{ card.brand}} {{ card.name}} {{card.color}} </h5>
                 <p class="abel">${{ card.price }}</p>
                 <app-buutonblack></app-buutonblack>
             </div>

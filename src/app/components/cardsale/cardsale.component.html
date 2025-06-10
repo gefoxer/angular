@@ -5,7 +5,7 @@
             <img class="rel" src="/img/nolike.svg" alt="hearch">
             <div class="card_w">
                 <img [src]="getProductImage(cardsale)" [alt]="cardsale.name">
-                <h5 class="abeezee">{{ cardsale.name }}</h5>
+                <h5 class="abeezee">{{cardsale.brand}} {{cardsale.name}} {{cardsale.color}}</h5>
                 <p class="abel">${{ cardsale.discount_price }}</p>
                 <app-buutonblack></app-buutonblack>
             </div>

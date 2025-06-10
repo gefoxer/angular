@@ -1,0 +1,298 @@
+*{
+    overflow-x: hidden
+}
+.main_info{
+    min-height: 769px;
+    height: 100%;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    gap: 48px;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 1);
+}
+
+
+
+.image{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    img{
+        margin-left: 48px;
+        display: flex;
+    }
+}
+
+.img_flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    :nth-child(1){
+        height: 93px;
+        width: 74.88px;
+    }
+    :nth-child(2){
+        height: 93px;
+        width: 46.43px;
+    }
+    :nth-child(3){
+        height: 93px;
+        width: 45.32px;
+    }
+    :nth-child(4){
+        height: 93px;
+        width: 34.49px;
+    }
+
+}
+
+.text {
+    min-height: 545px;
+    height: 100%;
+    width: 536px;
+    h2{
+        font-weight: 400;
+        font-style: italic;
+        font-size: 40px;
+        font-family: "ABeeZee", sans-serif;
+    }
+    h3 {
+        font-weight: 400;
+        font-style: italic;
+        font-size: 32px;
+        font-family: "ABeeZee", sans-serif;
+        padding-top: 24px;
+    }
+    p{
+        font-weight: 400;
+        font-family: "Abel", sans-serif;
+        color: rgba(108, 108, 108, 1);
+    }
+}
+
+.text_info{
+    padding-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-bottom: 24px;
+}
+
+.char{
+    height: 65px;
+    width: 168px;
+    background: rgba(244, 244, 244, 1);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    img{
+        padding-left: 16px;
+    }
+    p{
+       color:  rgba(167, 167, 167, 1);
+       font-size: 14px;
+       font-style: italic;
+       font-family: "ABeeZee", sans-serif;
+    }
+    h6{
+        color: rgba(78, 78, 78, 1);
+        font-weight: 400;
+        font-style: italic;
+        font-size: 14px;
+        font-family: "ABeeZee", sans-serif;
+    }
+}
+
+.text_button{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    button{
+        height: 56px;
+        width: 260px;
+        border: 1px solid rgba(0, 0, 0, 1);
+        border-radius: 6px;
+        margin-top: 32px;
+        cursor: pointer;
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            font-style: italic;
+            font-family: "ABeeZee", sans-serif;
+        }
+    }
+
+    :nth-child(1){
+        background: none;
+        color: rgba(0, 0, 0, 1)
+    }
+    :nth-child(2){
+        background: rgba(0, 0, 0, 1);
+        p{
+          color: rgba(255, 255, 255, 1)
+        }
+        
+    }
+}
+
+.buy_flex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+.buy{
+    
+    display: flex;
+    align-items: center;
+}
+
+.border_buy{
+    background: rgba(255, 255, 255, 1);
+    border-radius: 11px;
+    height: 56px;
+    width: 56px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.buy_text{
+    p{
+       color:  rgba(113, 113, 113, 1);
+       font-size: 14px;
+       font-style: italic;
+       font-family: "ABeeZee", sans-serif;
+       padding-bottom: 4px;
+    }
+    h6{
+        color: rgba(0, 0, 0, 1);
+        font-weight: 400;
+        font-style: italic;
+        font-size: 14px;
+        font-family: "ABeeZee", sans-serif;
+    }
+}
+
+// ВТОРОЙ БЛОК
+
+.details {
+    background: rgba(250, 250, 250, 1);
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+
+.details_size{
+    max-width: 1120px;
+    padding-left:40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    background: white;
+    min-height: 722px;
+    border-radius: 8px;
+    h1{
+        font-style: italic;
+        font-family: "Abeezee", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+    }
+    p{
+        font-weight: 400;
+        font-family: "Abeezee", sans-serif;
+        font-style: italic;
+        color: rgba(157, 157, 157, 1);
+        font-size: 14px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+
+.details_block{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(205, 205, 205, 1);
+    padding-bottom: 8px;
+    padding-top: 24px;
+    h2{
+        color: rgba(0, 0, 0, 1);
+        font-weight: 400;
+        font-family: "Abel", sans-serif;
+        font-size: 16px;
+    }
+    h3{
+        color: rgba(0, 0, 0, 1);
+        font-weight: 400;
+        font-family: "Abel", sans-serif;
+        font-size: 15px;
+    }
+
+    .details_block_h3 {
+        text-align: end;
+
+        h3{
+            color: rgba(0, 0, 0, 1);
+            font-weight: 400;
+            font-size: 15px;
+            font-family: "Abel", sans-serif;
+        }
+    }
+
+}
+
+.reit{
+    min-height: 368px;
+    display: flex;
+    align-items: center;
+}
+
+.reit_block{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 160px;
+
+    height: 184px;
+    width: 192px;
+    background: rgb(241, 241, 241);
+    border-radius: 25px;
+    h1{
+        font-weight: 400;
+        font-family: "Abeezee", sans-serif;
+        font-style: italic;
+        font-size: 56px; 
+    }
+    p{
+        font-style: italic;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: "Abeezee", sans-serif;
+        color: rgba(50, 50, 50, 0.527);
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+   
+}
+
+.related{
+    margin-bottom: 104px;
+    p{
+        font-weight: 400;
+        font-style: italic;
+        font-size: 24px;
+        font-family: "Abeezee", sans-serif;
+        text-align: center;
+        margin-bottom: 32px;
+        margin-top: 80px;
+    }
+}
