@@ -7,7 +7,8 @@ import { FirstComponent } from "../../components/first/first.component";
 import { BannersComponent } from "../../components/banners/banners.component";
 import { CardsaleComponent } from '../../components/cardsale/cardsale.component';
 import { SummersaleComponent } from "../../components/summersale/summersale.component";
-import { PopularproductComponent } from "../../components/popularproduct/popularproduct.component";
+import { PopularproductComponent } from '../../components/popularproduct/popularproduct.component';
+
 
 @Component({
   selector: 'app-home',
