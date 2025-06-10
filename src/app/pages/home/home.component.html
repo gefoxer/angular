@@ -1,59 +1,30 @@
 <app-header> </app-header>
-
 <app-first></app-first>
-
 <app-banners></app-banners>
 
 <section class="card">
-    <div class="card_w">
-      <div class="card_category">
-        <p class="abeezee">New Arrival</p>
-        <p class="abeezee">Bestseller</p>
-        <p class="abeezee">Featured Products</p>
-      </div>
-      <div class="card_flex">
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-      </div>
+  <div class="card_w">
+    <div class="card_category">
+      <p class="abeezee">New Arrival</p>
+      <p class="abeezee">Bestseller</p>
+      <p class="abeezee">Featured Products</p>
     </div>
+    <div class="card_flex">
+      <app-card></app-card>
+    </div>
+  </div>
 </section>
 
 <section class="card_sale">
-    <div class="card_w">
-      <div class="card_category_sale">
-        <p class="abeezee">New Arrival</p>
-      </div>
-      <div class="card_flex_sale">
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-      </div>
+  <div class="card_w">
+    <div class="card_category_sale">
+      <p class="abeezee">Discounts up to -50%</p>
     </div>
-</section>
-
-
-
-<section class="summer_sale">
-  <div class="summer_sale_txt">
-    <h4 class="abel">Big Summer Sale</h4>
-    <p class="abel">Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
-    <button>
-      <p class="abeezee">Shop Now</p>
-    </button>  
+    <div class="card_flex_sale">
+      <app-cardsale></app-cardsale>
+    </div>
   </div>
-  <img src="/img/image5.png" alt="1">
-  <img src="/img/image4.png" alt="2">
-  <img src="/img/image3.png" alt="3">
-  <img src="/img/image2.png" alt="2">
-  <img src="/img/image1.png" alt="5">
 </section>
 
-
+<app-summersale></app-summersale>
 <app-footer></app-footer>

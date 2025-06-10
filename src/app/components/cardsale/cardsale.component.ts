@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Card } from '../../interfaces/interface';
+import { Card, Cardsale } from '../../interfaces/interface';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-card',
+  selector: 'app-cardsale',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss']
+  templateUrl: './cardsale.component.html',
+  styleUrls: ['./cardsale.component.scss']
 })
-export class CardComponent implements OnInit {
-  cards: Card[] = [];
+export class CardsaleComponent implements OnInit {
+  cards: Cardsale[] = [];
   baseUrl = 'http://localhost:1452';
-  displayedCards: Card[] = [];
+  displayedCards: Cardsale[] = [];
 
   constructor(private http: HttpClient) {}
 
@@ -21,7 +21,7 @@ export class CardComponent implements OnInit {
     this.fetchProducts();
   }
 
-  getProductImage(product: Card): string {
+  getProductImage(product: Cardsale): string {
     if (!product.images || product.images.length === 0) return '';
     if (product.images[0].startsWith('http')) {
       return product.images[0];
@@ -30,10 +30,11 @@ export class CardComponent implements OnInit {
   }
 
   fetchProducts(): void {
-    this.http.get<Card[]>('http://localhost:1452/api/products/').subscribe({
+    this.http.get<Cardsale[]>('http://localhost:1452/api/products/').subscribe({
       next: (data) => {
         this.cards = data;
-        this.displayedCards = data.slice(0, 8);
+        const discountedProducts = data.filter(product => product.discount_price !== null);
+        this.displayedCards = discountedProducts.slice(0, 4);
       },
       error: (err) => {
         console.error('Ошибка при загрузке данных:', err);
