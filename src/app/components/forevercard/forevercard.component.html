@@ -1,0 +1,13 @@
+@for (card of favoriteCards; track card.id) {
+  <section class="forever-card">
+    <img class="forevercard_img" [src]="getProductImage(card)" [alt]="card.name">
+    <div class="forevercard_text">
+      <h2 class="abeezee">{{ card.name }}</h2>
+      <p class="abel">${{ card.price }}</p>
+    </div>
+    <img class="like" src="/img/like.svg" alt="like" (click)="removeFromFavorites(card.id)">
+  </section>
+}
+@if (favoriteCards.length === 0) {
+  <p class="no-favorites">У вас пока нет избранных товаров</p>
+}

@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Card } from '../../interfaces/interface';
 import { CommonModule } from '@angular/common';
 import { BuutonblackComponent } from "../buutonblack/buutonblack.component";
+import { CardService } from '../../services/card.service';
 
 @Component({
   selector: 'app-card',
@@ -16,7 +17,10 @@ export class CardComponent implements OnInit {
   baseUrl = 'http://localhost:1452';
   displayedCards: Card[] = [];
 
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    private cardService: CardService
+  ) {}
 
   ngOnInit(): void {
     this.fetchProducts();
@@ -40,5 +44,17 @@ export class CardComponent implements OnInit {
         console.error('Ошибка при загрузке данных:', err);
       }
     });
+  }
+
+  toggleFavorite(card: Card): void {
+    if (this.cardService.isCardFavorite(card.id)) {
+      this.cardService.removeFromFavorites(card.id);
+    } else {
+      this.cardService.addToFavorites(card);
+    }
+  }
+
+  isCardFavorite(cardId: number): boolean {
+    return this.cardService.isCardFavorite(cardId);
   }
 }

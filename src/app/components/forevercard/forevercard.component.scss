@@ -1,0 +1,49 @@
+section {
+    width: 320px;
+    height: 122px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border-top: 1px solid #E0E0E0;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    .forevercard_img{
+        height: 90px;
+        width: 90px;
+    }
+
+}
+
+.forevercard_text {
+    height: 56px;
+    width: 219px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+    
+   
+    h2{
+        font-size: 16px;
+         font-weight: 400;
+         font-style: italic;
+
+    }
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        padding-top: 8px;
+    }
+}
+
+.like {
+    height: 24px;
+    width: 24px;
+}
+
+.no-favorites {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Abel", sans-serif;
+}
