@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Card } from '../../interfaces/interface';
 import { CommonModule } from '@angular/common';
+import { BuutonblackComponent } from "../buutonblack/buutonblack.component";
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, BuutonblackComponent],
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss']
 })

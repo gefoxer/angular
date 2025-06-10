@@ -1,7 +1,8 @@
 section{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 16px;
 }
 .card {
     background: rgba(246, 246, 246, 1);

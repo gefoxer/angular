@@ -1,0 +1,37 @@
+button{
+        width: 186px;
+        height: 48px;
+        background: black;
+        border-radius: 8px;
+        border: 0;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        transition: 0.5s;
+        cursor: pointer;
+        p{
+            color: rgba(255, 255, 255, 1);
+            font-style: italic;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+
+    button:hover {
+        background: none ;
+        border: 1px solid;
+        transform: scale(1.02);
+        p{
+            color: black;
+        }
+    }
+
+@media (max-width: 715px){
+    button{
+         height: 48px;
+         width: 139.5px;
+         margin-top: 16px;
+         p{
+          font-style: normal;
+         }
+    }
+}
