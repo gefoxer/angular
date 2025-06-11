@@ -177,6 +177,92 @@
     }
 }
 
+@media (max-width: 430px) {
+    
+    .image{
+        display: flex;
+        flex-direction: column-reverse;
+        
+
+        img{
+            width: 263px;
+            height: 329px;
+            margin-left: 0;
+            margin-top: 40px;
+        }
+        .img_flex{
+            display: flex;
+            flex-direction: row;
+            img{
+                width: 58px;
+                height: 74px;
+                
+            }
+        }
+    }
+
+    .text {
+        h2{
+            font-style: normal;
+            font-family: "Abel", sans-serif;
+        }
+
+        h3{
+           font-style: normal;
+           font-family: "Abel", sans-serif; 
+        }
+        
+        max-width: 341px;
+        
+       .text_info{
+        justify-content: center;
+        padding: 0px 0px 0px 0px;
+        gap: 5px;
+        padding-top: 16px;
+        padding-bottom: 24px;
+        .char{
+            
+            align-items: center;
+            img{
+                padding-left: 16px;
+            }
+
+            div p, h6{
+                font-family: "Abel", sans-serif; 
+                font-style: normal;
+            }   
+        }
+       }
+       
+    }
+
+    .text_button{
+        align-items: center;
+        justify-content: center;
+        button{
+            margin-top: 16px;
+            width: 341px;
+            p{
+                font-style: normal;
+                font-family: "Abel", sans-serif; 
+            }
+
+        }
+    
+    }
+
+    .buy{
+        flex-direction: column;
+        text-align: center;
+        .buy_text p, h6{
+            font-style: normal;
+            font-family: "Abel", sans-serif;
+        }
+    }
+
+
+}
+
 // ВТОРОЙ БЛОК
 
 .details {
@@ -248,6 +334,19 @@
 
 }
 
+@media (max-width: 430px){
+    .details_size {
+        h1{
+            font-family: "Abel", sans-serif;
+            font-style: normal;
+        }
+        p{
+            font-family: "Abel", sans-serif;
+            font-style: normal;
+        }
+    }
+}
+
 .reit{
     min-height: 368px;
     display: flex;
@@ -296,3 +395,5 @@
         margin-top: 80px;
     }
 }
+
+
